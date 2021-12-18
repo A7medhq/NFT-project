@@ -1,0 +1,315 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(19, 19, 19);
+}
+nav{
+    width: 100%;
+}
+a{
+    
+   
+}
+.naw-row{
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+     width: 100%;
+    
+}
+.Whit-MINT{
+    display: flex;
+    width: 30vw;
+    justify-content: center;
+    
+}
+.nav-img{
+    width: 2vw;
+}
+.Sloties-section{
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    
+    
+}
+.logo-nav{
+    width: 7vw;
+  
+    font-size: 12px;
+}
+ 
+  
+ 
+  .center-line{
+     
+  }
+  .nave-line{
+      width: 90%;
+      background-color: rgb(247, 247, 247);
+      height: 0.3vh;
+      margin-top: 2vh;
+  }
+  .main-nft{
+      color: rgb(252, 252, 252);
+    height: 80vh;
+  display: flex;
+
+      background-color: rgb(20, 20, 20);
+  }
+  .pra-main{
+      padding: 10vh;
+      width: 50%;
+  }
+  .Sold-p{
+      font-size: 4rem;
+      color: rgb(255, 255, 255);
+      
+  }
+  .Every-p{
+    font-size: 1.3rem;
+  }
+  img{
+      margin-left: 1vh;
+  }
+  .navbar-nav{
+      margin-left: 10vw;
+  }
+  .navbar-brand{
+      margin-left: 8vw;
+  }
+  
+  
+  .nav-item {
+      margin: 0 auto;
+  }
+  .nav-link{
+      color: rgb(255, 255, 255) !important;
+  }
+  .navbar-brand{
+    color: rgb(255, 255, 255) !important;
+  }
+  .btn{
+    color: rgb(255, 255, 255) !important;
+    margin-left: 1vw;
+  }
+  .img-roow {
+      margin-left: 1vw;
+  }
+  .main-contenar{
+      width: 50%;
+  }
+  .main-img{
+      height: 600px;
+      width: 500px;
+  }
+  .cracter-section{
+      
+   
+      background-color: rgb(20, 20, 20);
+      color: rgb(255, 255, 255);
+      display: flex;
+      justify-content: center;
+      padding:10vh ;
+      
+flex-wrap: wrap;
+  }
+  .img-cracter{
+      width: 260px;
+      height: 400px;
+      object-fit: cover;
+  }
+  .cracter-size{
+      display: flex;
+      flex-direction: column;
+      padding: 4vh;
+   align-items: center;
+      font-size: 2rem;
+  }
+  .footer-row{
+display: flex;
+justify-content: space-between;
+width: 85%;
+color: rgb(252, 252, 252);
+  }
+  .footer-backgrond{
+    background-color:rgb(20, 20, 20) ;
+    display: flex;
+    justify-content: center;
+  }
+  .footerr{
+      background-color: rgb(20, 20, 20);
+  }
+   .btn2 {
+    -webkit-border-radius: 20;
+    -moz-border-radius: 20;
+    border-radius: 10px;
+    font-family: Georgia;
+    color: #000000;
+    font-size: 22px;
+    background: #fcfcfc;
+   height: 6vh;
+   width: 22vw;
+    border: solid #ffffff 2px;
+    text-decoration: none;
+    margin-left: 2vw;
+    
+  }
+  
+  .btn2:hover {
+    background:  rgb(20, 20, 20);
+    
+    text-decoration: none;
+    color: #fdfdfd;
+  } 
+  .btn3 {
+    -webkit-border-radius: 20;
+    -moz-border-radius: 20;
+    border-radius: 10px;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 18px;
+    background: #1DA1F2;
+    height: 6vh;
+    width: 10vw;
+
+    border: solid #1DA1F2 2px;
+    text-decoration: none;
+    font-size: 28px;
+  }
+  
+  .btn3:hover {
+    background: #2dd1fa;
+    background-image: -webkit-linear-gradient(top, #2dd1fa, #fcaec9);
+    background-image: -moz-linear-gradient(top, #2dd1fa, #fcaec9);
+    background-image: -ms-linear-gradient(top, #2dd1fa, #fcaec9);
+    background-image: -o-linear-gradient(top, #2dd1fa, #fcaec9);
+    background-image: linear-gradient(to bottom, #2dd1fa, #fcaec9);
+    text-decoration: none;  width: 16vw; height: 7vh;
+  }
+  .btn4 {
+    -webkit-border-radius: 20;
+    -moz-border-radius: 20;
+    border-radius: 10px;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 18px;
+    background: #7289DA;
+    height: 6vh;
+    width: 10vw;
+margin: 1vh;
+    border: solid #7289DA 2px;
+    text-decoration: none;
+    font-size: 28px;
+  }
+  
+  .btn4:hover {
+    background: #7389d4;
+  background-image: -webkit-linear-gradient(top, #7389d4, #fcaec9);
+  background-image: -moz-linear-gradient(top, #7389d4, #fcaec9);
+  background-image: -ms-linear-gradient(top, #7389d4, #fcaec9);
+  background-image: -o-linear-gradient(top, #7389d4, #fcaec9);
+  background-image: linear-gradient(to bottom, #7389d4, #fcaec9);
+  text-decoration: none;width: 16vw; height: 7vh;
+  }
+  .btn5 {
+    -webkit-border-radius: 20;
+    -moz-border-radius: 20;
+    border-radius: 10px;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 18px;
+    background: #555555;
+    height: 6vh;
+    width: 10vw;
+
+    border: solid #555555 2px;
+    text-decoration: none;
+    font-size: 28px;
+  }
+  
+  .btn5:hover {
+    background: #555555;
+    background-image: -webkit-linear-gradient(top, #555555, #fcaec9);
+    background-image: -moz-linear-gradient(top, #555555, #fcaec9);
+    background-image: -ms-linear-gradient(top, #555555, #fcaec9);
+    background-image: -o-linear-gradient(top, #555555, #fcaec9);
+    background-image: linear-gradient(to bottom, #555555, #fcaec9);
+    text-decoration: none;  width: 16vw; height: 7vh;
+  }
+  .sec-row-div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .line3{
+      height: 0.3vh;
+      background-color: rgb(253, 253, 253);
+      width: 90%;
+      margin: 0 auto;
+  }
+  /* @media(max-width:600px){
+    .main-nft{
+       
+        display: flex;
+      flex-direction: column;
+    height: 150vh;
+        }
+        .cracter-section{
+            padding:5vh ;
+            flex-wrap: wrap;
+        }
+        .main-img{
+            height: 657px;
+          width: 365px;
+        }
+    .navbar-light .navbar-toggler-icon{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;}
+    .pra-main{
+        padding: 3vh;
+        width: 100%;
+      }
+      .main-contenar{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+  } */
+
+  @media(max-width:1026px){
+    .main-nft{
+       
+    display: flex;
+  flex-direction: column;
+height: 130vh;
+    }
+    .cracter-section{
+        padding:5vh ;
+        flex-wrap: wrap;
+    }
+    .main-img{
+        height: 657px;
+      width: 365px;
+    }
+.navbar-light .navbar-toggler-icon{
+background-color: rgb(255, 255, 255);
+border-radius: 5px;}
+.pra-main{
+    padding: 3vh;
+    width: 100%;
+  }
+  .main-contenar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.Sold-p{
+    font-size: 2.6rem;
+}
+  }
