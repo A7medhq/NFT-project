@@ -10,13 +10,14 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.css" integrity="sha512-StX+VvrxmIzyPqj2RfdfyJYcl8DGRpzmwT5XI8mkUpzYMO/f76DxE19uZfaptPdXThtgIapvUg21r+FbnZkI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css" integrity="sha512-EsqWk8izp7IArcp+ynSFwpyxxNxSNysUeEi1EGNG/h/D93BC4GhS3aLlH5bQNIpbiKMFyopRxRJKzxcOZeIRkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    <link rel="stylesheet/less" href="bubble.less">
+        <title>Document</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light zxc "
-            style="background-color: #1d1d1d;color: aliceblue !important;width: 100%;">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light zxc"
+            style="color: aliceblue !important;width: 100%;">
             <a class="navbar-brand" href="#">logo</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,13 +25,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="#">What are Sloties? </a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="#">Benefits</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="#">Roadmap</a>
                     </li>
                     <li class="nav-item ">
@@ -45,7 +46,7 @@
                     <li class="nav-item ">
                         <button type="button" class="btn btn-outline-dark ">MINT YOUR&nbsp;TICKET</button>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item social-btns">
                         <a href="https://twitter.com/SlotieNft" target="_blank">
                             <img src="https://uploads-ssl.webflow.com/617c01210e8f0f423616fdd8/617c07efa78818323b058e31_Logo%20-%20Twitter.svg"
                                 alt="Twitter logo." class="nav-img"></a>
@@ -67,20 +68,54 @@
     </header>
 
     
-    <div class="main-nft">
+    <div class="main-nft bubbleWrapper">
         <div class="pra-main">
-            <p class="Sold-p"><b>Sold Out Under 5 Minutes </b></p>
+            <p class="Sold-p"><b>Sold Out Under 5 Minutes</b></p>
             <p class="Every-p">Every purchased ticket is secured on blockchain network, you <br> can mint them during
                 one week & see them on
                 OpenSea. <br> Reveal will happen shortly.</p>
-        </div>
-        <div class="main-contenar">
-        <img class="main-img" src="img/IMG-20211216-WA0015.png" alt=""></div>
-    </div>
+              </div>
+              <div class="main-contenar">
+                <img class="main-img" src="img/fgdfgfdg.png" alt="">
+              </div>
 
+	
+              <ul class="bg-bubbles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+
+        </div>
+ 
+        <hr style="visibility: visible;">
+
+
+    <div class="store-contenar">
+        <img class="Slotie-img" src="/img/61893410dd6b3875959a568b_Aztec God (1).png" alt="">
+      
+        <div class="Slotie-p">
+        <p><strong>What are Sloties?</strong></p>
+        <p>Sloties are your ticket into the largest and fastest growing online Casino network on the blockchain. With<br> only 10,000 VIP members ever to be minted, Sloties grant holders access to the new world of Defi Gambling. Sloties grant proof of ownership on the Ethereum blockchain, and are based on the ERC-721 standard. More than your ordinary community, Sloties provide real world benefits in over 150 Casinos worldwide. This is not your average Slot Machine: with Sloties it's your house, your rules.
+  
+          Each Slotie NFT is one of a kind, with varying degrees of rarity. <br> And unlike other NFTs with only superficial rarity, the rarity of your Slotie will determine your share from Exclusive Holders Rewards. The rarer your Slotie, the more rewards it will generate.
+          
+          They are non-fungible, as these tokens are not interchangeable with one another.
+          
+          ‍Each Slotie is 100% unique.</p>
+      </div>
+    </div>
 
 <div class="twinkling"></div>
 <div class="clouds"></div>
+
 
 <!-- carousel -->
 <div class="wrapper">
@@ -292,13 +327,15 @@
           <p class="Sold-p">Join the club</p>
           <p class="Every-p">Become a member of the strongest and fast growing DeFi gambling community.</p>
      </div>
-        <div>
+        <div id="buttons-row">
             <button type="button" class="btn3">Tiwtter</button>
             <button type="button" class="btn4">Discord</button>
             <button type="button" class="btn5">OpenSea</button>
+            <button type="button" class="btn6">instagram</button>
+
         </div>
     </div>
-    <div class="sec-row-div"><button type="button" class="btn2 ">MINT YOUR&nbsp;TICKET</button>
+    <div class="sec-row-div"><button type="button" class="btn2 ">MINT YOUR TICKET</button>
     
     </div>
 </div>
@@ -310,6 +347,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
     </script>
@@ -322,3 +360,5 @@
 </body>
 
 </html>
+
+
