@@ -1,364 +1,485 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.css" integrity="sha512-StX+VvrxmIzyPqj2RfdfyJYcl8DGRpzmwT5XI8mkUpzYMO/f76DxE19uZfaptPdXThtgIapvUg21r+FbnZkI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css" integrity="sha512-EsqWk8izp7IArcp+ynSFwpyxxNxSNysUeEi1EGNG/h/D93BC4GhS3aLlH5bQNIpbiKMFyopRxRJKzxcOZeIRkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet/less" href="bubble.less">
-        <title>Document</title>
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet/less" href="bubble.less" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.css"
+      integrity="sha512-StX+VvrxmIzyPqj2RfdfyJYcl8DGRpzmwT5XI8mkUpzYMO/f76DxE19uZfaptPdXThtgIapvUg21r+FbnZkI/A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css"
+      integrity="sha512-EsqWk8izp7IArcp+ynSFwpyxxNxSNysUeEi1EGNG/h/D93BC4GhS3aLlH5bQNIpbiKMFyopRxRJKzxcOZeIRkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="btn.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="stars.css" />
+    <link rel="stylesheet" href="bbb.css" />
+    <title>Floating Keez</title>
+  </head>
 
-<body>
+
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <h1 class="animation__shake">Floating Keez</h1>
+  </div>
+
+  
+  <body>
+ 
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light zxc"
-            style="color: aliceblue !important;width: 100%;">
-            <a class="navbar-brand" href="#">logo</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">What are Sloties? </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Benefits</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Roadmap</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="#">Team</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="#">FAQ</a>
-                    </li>
-                    <li class="nav-item ">
-                        <button type="button" class="btn btn-outline-dark ">Whitepaper</button>
-                    </li>
-                    <li class="nav-item ">
-                        <button type="button" class="btn btn-outline-dark ">MINT YOUR&nbsp;TICKET</button>
-                    </li>
-                    <li class="nav-item social-btns">
-                        <a href="https://twitter.com/SlotieNft" target="_blank">
-                            <img src="https://uploads-ssl.webflow.com/617c01210e8f0f423616fdd8/617c07efa78818323b058e31_Logo%20-%20Twitter.svg"
-                                alt="Twitter logo." class="nav-img"></a>
-           
-                  
-                        <a href="https://discord.gg/slotie" target="_blank">
-                            <img src="https://uploads-ssl.webflow.com/617c01210e8f0f423616fdd8/617c07ef9e95ea4de615e71f_Logo%20-%20Discord.svg"
-                                alt="Discord logo." class="nav-img"></a>
-                 
-                   
-                        <a href="https://opensea.io/collection/slotienft" target="_blank">
-                            <img src="https://uploads-ssl.webflow.com/617c01210e8f0f423616fdd8/617c07ef7756fd2484c4a532_Logo%20-%20OpenSea.svg"
-                                alt="OpenSea logo." class="nav-img"></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+      <nav
+        class="navbar fixed-top navbar-expand-lg navbar-light zxc"
+        style="color: aliceblue !important; width: 100%"
+      >
+        <a class="navbar-brand" href="#">Floating Keez</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">What are Sloties? </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Benefits</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Roadmap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn btn-outline-dark">
+                Whitepaper
+              </button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn btn-outline-dark">
+                MINT YOUR&nbsp;TICKET
+              </button>
+            </li>
+            <li class="nav-item social-btns">
+              <a href="https://twitter.com/SlotieNft" target="_blank">
+                <img
+                  src="https://uploads-ssl.webflow.com/617c01210e8f0f423616fdd8/617c07efa78818323b058e31_Logo%20-%20Twitter.svg"
+                  alt="Twitter logo."
+                  class="nav-img"
+              /></a>
 
+              <a href="https://discord.gg/slotie" target="_blank">
+                <img
+                  src="https://uploads-ssl.webflow.com/617c01210e8f0f423616fdd8/617c07ef9e95ea4de615e71f_Logo%20-%20Discord.svg"
+                  alt="Discord logo."
+                  class="nav-img"
+              /></a>
+
+              <a href="https://opensea.io/collection/slotienft" target="_blank">
+                <img
+                  src="https://uploads-ssl.webflow.com/617c01210e8f0f423616fdd8/617c07ef7756fd2484c4a532_Logo%20-%20OpenSea.svg"
+                  alt="OpenSea logo."
+                  class="nav-img"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
-    
-    <div class="main-nft bubbleWrapper">
-        <div class="pra-main">
-            <p class="Sold-p"><b>Sold Out Under 5 Minutes</b></p>
-            <p class="Every-p">Every purchased ticket is secured on blockchain network, you <br> can mint them during
-                one week & see them on
-                OpenSea. <br> Reveal will happen shortly.</p>
-              </div>
-              <div class="main-contenar">
-                <img class="main-img" src="img/fgdfgfdg.png" alt="">
-              </div>
-
-	
-              <ul class="bg-bubbles">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-
-        </div>
- 
-        <hr style="visibility: visible;">
-
-
-    <div class="store-contenar">
-        <img class="Slotie-img" src="img/store.png" alt="">
-      
-        <div class="Slotie-p">
-        <p><strong>What are Sloties?</strong></p>
-        <p>Sloties are your ticket into the largest and fastest growing online Casino network on the blockchain. With<br> only 10,000 VIP members ever to be minted, Sloties grant holders access to the new world of Defi Gambling. Sloties grant proof of ownership on the Ethereum blockchain, and are based on the ERC-721 standard. More than your ordinary community, Sloties provide real world benefits in over 150 Casinos worldwide. This is not your average Slot Machine: with Sloties it's your house, your rules.
-  
-          Each Slotie NFT is one of a kind, with varying degrees of rarity. <br> And unlike other NFTs with only superficial rarity, the rarity of your Slotie will determine your share from Exclusive Holders Rewards. The rarer your Slotie, the more rewards it will generate.
-          
-          They are non-fungible, as these tokens are not interchangeable with one another.
-          
-          ‍Each Slotie is 100% unique.</p>
-      </div>
-    </div>
-
-<div class="twinkling"></div>
-<div class="clouds"></div>
-
-
-<!-- carousel -->
-<div class="wrapper">
-    <div class="carousel">
-      <div><a href="#"><img src="https://picsum.photos/600/500?random=1"></a></div>
-      <div><a href="#"><img src="https://picsum.photos/600/500?random=2"></a></div>
-      <div><a href="#"><img src="https://picsum.photos/600/500?random=3"></a></div>
-      <div><a href="#"><img src="https://picsum.photos/600/500?random=4"></a></div>
-      <div><a href="#"><img src="https://picsum.photos/600/500?random=5"></a></div>
-      <div><a href="#"><img src="https://picsum.photos/600/500?random=6"></a></div>
-    </div>
-</div>
-<!-- carousel -->
-
-<!-- Roadmap -->
-
-
-<section id="roadmap" class="section roadmap-section">
-    <div class="container">
-      <div class="wrapper flex vertical align-centre">
-        <h2>
-          Roadmap.
-        </h2>
-        <p class="text" >
-          Our plans moving forward into 2022.
+    <div class="main-nft">
+      <div class="pra-main">
+        <p class="Sold-p"><b>Sold Out Under 5 Minutes</b></p>
+        <p class="Every-p">
+          Every purchased ticket is secured on blockchain network, you <br />
+          can mint them during one week & see them on OpenSea. <br />
+          Reveal will happen shortly.
         </p>
       </div>
-      <div class="grid roadmap-grid">
-        <div
-          id="w-node-_8f27ac88-f038-059b-dddc-d0d4b403e9f9-f416fdd6"
-          data-w-id="8f27ac88-f038-059b-dddc-d0d4b403e9f9"
-          class="vertical-line roadmap-line"
-        ></div>
-        <div></div>
-        <div></div>
-        <div class="wrapper roadmap-block roadmap-block-left">
-          <h3>Q3, 2021</h3>
-          <div class="roadmap-rich-text-block w-richtext">
-            <h4>Slot Machine Development</h4>
-            <p>
-              With 10+ years of game development experience, the team came up
-              with the ambitious plan to reinvent slot machines by bringing
-              blockchain technologies to the gambling industry.
-            </p>
-          </div>
+      <div class="main-contenar">
+        <img class="main-img" src="img/fgdfgfdg.png" alt="" />
+      </div>
+    </div>
+
+    <hr style="visibility: visible" />
+
+    <div class="store-contenar" data-aos="fade-up">
+      <img class="Slotie-img" src="img/store.png" alt="" />
+
+      <div class="Slotie-p">
+        <p><strong>What are Floating Keez?</strong></p>
+        <p>
+          Floating Keez are 10,000 top-secret alien cloning projects that were
+          supposed to be sent to original aliens that live on the planet
+          Keeloanus by Earth scientists. But they got caught by the government
+          so the scientists had to send the capsule unexpectedly to space. The
+          capsule exploded in space and now all the KeeZ are floating in space.
+          By minting Floating Keez you will help teleport KeeZ to the planet
+          Keeloanus .
+        </p>
+      </div>
+    </div>
+
+    <div class="twinkling"></div>
+    <div class="clouds"></div>
+
+    <div class="stars-container">
+      <div class="night">
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+      </div>
+    </div>
+
+    <!-- carousel -->
+    <div class="carousel-wrapper" data-aos="fade-up" data-aos-duration="1500">
+      <div class="carousel">
+        <div>
+          <a href="#"><img src="img/1.jpeg" /></a>
         </div>
-        <div class="wrapper flex vertical align-centre">
-          <div class="circle roadmap-circle"></div>
-          <div class="vertical-line roadmap-line"></div>
+        <div>
+          <a href="#"><img src="img/2.jpeg" /></a>
         </div>
-        <div></div>
-        <div></div>
-        <div class="wrapper flex vertical align-centre">
-          <div class="circle roadmap-circle"></div>
-          <div class="vertical-line roadmap-line"></div>
+        <div>
+          <a href="#"><img src="img/3.jpeg" /></a>
         </div>
-        <div class="wrapper roadmap-block roadmap-block-right">
-          <h3>Q4, 2021</h3>
-          <div class="roadmap-rich-text-block w-richtext">
-            <h4>Presale / Sale</h4>
-            <p>19:00 UTC 7th December - Presale</p>
-            <p>20:00 UTC 7th December - Public Sale</p>
-            <h4>Rarity Sniper Integration</h4>
-            <p>
-              Track your Slotie&#x27;s rarity with the largest NFT community
-              in the world, Rarity Sniper. Sloties will be listed on Rarity
-              Sniper and be seen by NFT holders worldwide.
-            </p>
-          </div>
+        <div>
+          <a href="#"><img src="img/4.jpeg" /></a>
         </div>
-        <div class="wrapper roadmap-block roadmap-block-left">
-          <h3>Q1-Q2, 2022</h3>
-          <div class="roadmap-rich-text-block w-richtext">
-            <h4>Slottery Ticket Generation</h4>
-            <p>
-              To reward our early adopters, the very first Slotie Lottery will
-              have a grand prize of 10 ETH. Each week following, Slotie
-              holders can participate in a weekly lottery for cash prizes,
-              WATTs tokens, NFTs and free spins in our partner casinos.
-            </p>
-            <p>‍<br /></p>
-            <h4>Partnering up with 25 Partner Casinos</h4>
-            <p>
-              The road to mass adoption begins as our first 25 partners will
-              introduce the Slotie NFT into their casinos. All Slotie NFT
-              holders will have:
-            </p>
-            <p>‍</p>
-            <p>1. Exclusive Holder Reward,</p>
-            <p>
-              2. Ability to stake NFTs into the slot game &amp; generate
-              additional rewards,
-            </p>
-            <p>3. Up to 20% rakebacks in partner crypto casinos,</p>
-            <p>4. WATTs tokens generated daily by Slotie NFTs,</p>
-          </div>
+        <div>
+          <a href="#"><img src="img/5.jpg" /></a>
         </div>
-        <div class="wrapper flex vertical align-centre">
-          <div class="circle roadmap-circle"></div>
-          <div class="vertical-line roadmap-line"></div>
-        </div>
-        <div></div>
-        <div></div>
-        <div class="wrapper flex vertical align-centre">
-          <div class="circle roadmap-circle"></div>
-          <div class="vertical-line roadmap-line"></div>
-        </div>
-        <div class="wrapper roadmap-block roadmap-block-right">
-          <h3>Q2-Q3, 2022</h3>
-          <div class="roadmap-rich-text-block w-richtext">
-            <h4>Launch of the Marketplace</h4>
-            <p>
-              The Launch of the Slotie Marketplace will allow you to trade
-              your WATTs and Sloties without expensive gas costs. The faster
-              and lower fee transactions of our Marketplace will give Holders
-              more liquidity to trade their WATTs and NFTs.
-            </p>
-            <p>‍</p>
-            <h4>Partnering up with 50 Casinos</h4>
-            <p>
-              Slotie NFT adoption increases as 50 of our partners fully
-              integrate the Slotie. VIP membership access will be valid in all
-              casinos hosting Sloties, and rewards increase drastically.
-            </p>
-            <p>‍</p>
-            <h4>
-             Breeding the Second Generation - Junior Sloties
-            </h4>
-            <p>
-              The ability to breed your Sloties for Junior Sloties begins.
-            </p>
-          </div>
-        </div>
-        <div class="wrapper roadmap-block roadmap-block-left">
-          <h3>Q3+, 2022</h3>
-          <div class="roadmap-rich-text-block w-richtext">
-            <h4>
-              <strong
-                >Junior Sloties&#x27; New Crypto Game Development
-                Starts</strong
-              >
-            </h4>
-            <p>
-              Trade, earn, and double your profits with Junior Sloties, while
-              the Junior Slotie game is under development.
-            </p>
-            <p>‍</p>
-            <h4>
-              <strong
-                >Third Wave of Crypto-Casino Partnership (75 Sign the
-                contract)</strong
-              >
-            </h4>
-            <p>
-              The third wave of Slotie adoption begins as 75 of our Casino
-              partners fully integrate the NFT slot game. Once again, holdrs
-              exclusive rewards nearly doubles for Slotie holders.
-            </p>
-          </div>
-        </div>
-        <div class="wrapper flex vertical align-centre">
-          <div class="circle roadmap-circle"></div>
-          <div class="vertical-line roadmap-line"></div>
-        </div>
-        <div></div>
-        <div></div>
-        <div class="wrapper flex vertical align-centre">
-          <div class="circle roadmap-circle"></div>
-        </div>
-        <div class="wrapper roadmap-block roadmap-block-right">
-          <h3>To be announced.</h3>
+        <div>
+          <a href="#"><img src="img/6.jpeg" /></a>
         </div>
       </div>
     </div>
-  </section>
+    <!-- carousel -->
 
+    <!-- Roadmap -->
 
+    <section
+      id="roadmap"
+      class="section roadmap-section"
+      style="overflow-x: hidden"
+    >
+      <div class="container">
+        <div class="wrapper flex vertical align-centre">
+          <h2 data-aos="fade-up">Roadmap.</h2>
+          <p class="text" data-aos="fade-up">
+            Our plans moving forward into 2022.
+          </p>
+        </div>
+        <div class="grid roadmap-grid">
+          <div
+            id="w-node-_8f27ac88-f038-059b-dddc-d0d4b403e9f9-f416fdd6"
+            data-w-id="8f27ac88-f038-059b-dddc-d0d4b403e9f9"
+            class="vertical-line roadmap-line"
+          ></div>
+          <div></div>
+          <div></div>
+          <div
+            class="wrapper roadmap-block roadmap-block-left"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
+            <div class="roadmap-rich-text-block w-richtext">
+              <h3><strong>PHASE-1</strong></h3>
+              <p class="road-text">
+                10,000 Floating KeeZ scattered now around  Ethereum blockchain
+                and we'll start building Keeloanus Community through Discord.
+              </p>
+            </div>
+          </div>
+          <div class="wrapper flex vertical align-centre">
+            <div class="circle roadmap-circle"></div>
+            <div class="vertical-line roadmap-line"></div>
+          </div>
+          <div></div>
+          <div></div>
+          <div class="wrapper flex vertical align-centre">
+            <div class="circle roadmap-circle"></div>
+            <div class="vertical-line roadmap-line"></div>
+          </div>
+          <div
+            class="wrapper roadmap-block roadmap-block-right"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
+            <div class="roadmap-rich-text-block w-richtext">
+              <h3><strong>PHASE-2</strong></h3>
+              <p class="road-text">
+                After 2000 Floating Keez are minted safely in Keeloanus . 10
+                Ethereum will be randomly given to 20 random wallets.
+              </p>
+            </div>
+          </div>
+          <div
+            class="wrapper roadmap-block roadmap-block-left"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
+            <div class="roadmap-rich-text-block w-richtext">
+              <h3><strong>PHASE-3</strong></h3>
+              <p class="road-text">
+                4000 Floating KeeZ are minted safely now.  Keeloanus Club will
+                be launched with exclusive access for Floating KeeZ holders to
+                start activities, giveaways and interactions between members to
+                to help rescuing the rest of the Floating KeeZ.
+              </p>
+            </div>
+          </div>
+          <div class="wrapper flex vertical align-centre">
+            <div class="circle roadmap-circle"></div>
+            <div class="vertical-line roadmap-line"></div>
+          </div>
+          <div></div>
+          <div></div>
+          <div class="wrapper flex vertical align-centre">
+            <div class="circle roadmap-circle"></div>
+            <div class="vertical-line roadmap-line"></div>
+          </div>
+          <div
+            class="wrapper roadmap-block roadmap-block-right"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
+            <div class="roadmap-rich-text-block w-richtext">
+              <h3><strong>PHASE-4</strong></h3>
+              <p class="road-text">
+                After Keeloanus Club efforts 6,000 Floating KeeZ are minted
+                safely.  Keeloanus store with access for Floating KeeZ holders
+                with different kinds of products and accessories will be
+                launched. Free Merch and gifts will be sent to Keeloanus heros
+                who minted more than 5 Floating KeeZ .
+              </p>
+            </div>
+          </div>
+          <div
+            class="wrapper roadmap-block roadmap-block-left"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
+            <div class="roadmap-rich-text-block w-richtext">
+              <h3>
+                <strong>PHASE-5</strong>
+              </h3>
+              <p class="road-text">
+                Now 8000 Floating KeeZ are minted in Keeloanus . Short film
+                where top 10 Floating KeeZ holders will be featuring in the film
+                as  secondary characters along with the 4 main Original Alien
+                characters from Keeloanus.
+              </p>
+            </div>
+          </div>
+          <div class="wrapper flex vertical align-centre">
+            <div class="circle roadmap-circle"></div>
+            <div class="vertical-line roadmap-line"></div>
+          </div>
+          <div></div>
+          <div></div>
+          <div class="wrapper flex vertical align-centre">
+            <div class="circle roadmap-circle"></div>
+          </div>
+          <div
+            class="wrapper roadmap-block roadmap-block-right"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
+            <h3>
+              <strong>PHASE-6</strong>
+            </h3>
+            <p class="road-text">
+              The 4 main Original Alien characters will be Airdropped to Random
+              Floating KeeZ holders.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-
-
-
-
-<!-- Roadmap -->
+    <!-- Roadmap -->
 
     <div class="cracter-section">
-        <div class="cracter-size">
-            <img class="img-cracter" src="img/61894963d23d1741f3caec89_Aztec God-p-500.jpeg" alt="">
-            <p>basil lubbad</p>
-        </div>
-        <div class="cracter-size">
-            <img class="img-cracter" src="img/61894963d23d1741f3caec89_Aztec God-p-500.jpeg" alt="">
-            <p>basil lubbad</p>
-        </div>
-        <div class="cracter-size">
-            <img class="img-cracter" src="img/61894963d23d1741f3caec89_Aztec God-p-500.jpeg" alt="">
-            <p>basil lubbad</p>
-        </div>
-        <div class="cracter-size">
-            <img class="img-cracter" src="img/61894963d23d1741f3caec89_Aztec God-p-500.jpeg" alt="">
-            <p>basil lubbad</p>
-        </div>
+      <div class="cracter-size" data-aos="flip-left" data-aos-duration="1500">
+        <img
+          class="img-cracter"
+          src="img/61894963d23d1741f3caec89_Aztec God-p-500.jpeg"
+          alt=""
+        />
+        <p>Developer</p>
+      </div>
+      <div class="cracter-size" data-aos="flip-left" data-aos-duration="1500">
+        <img
+          class="img-cracter"
+          src="img/61894963d23d1741f3caec89_Aztec God-p-500.jpeg"
+          alt=""
+        />
+        <p>Graphic Designer</p>
+      </div>
+      <div class="cracter-size" data-aos="flip-left" data-aos-duration="1500">
+        <img
+          class="img-cracter"
+          src="img/61894963d23d1741f3caec89_Aztec God-p-500.jpeg"
+          alt=""
+        />
+        <p>Marketing</p>
+      </div>
+      <div class="cracter-size" data-aos="flip-left" data-aos-duration="1500">
+        <img
+          class="img-cracter"
+          src="img/61894963d23d1741f3caec89_Aztec God-p-500.jpeg"
+          alt=""
+        />
+        <p>...</p>
+      </div>
     </div>
 
-    <div class="footerr">
-<div class="footer-backgrond">
-<div class="footer-row">
-    <div>
-        <div>
-          <p class="Sold-p">Join the club</p>
-          <p class="Every-p">Become a member of the strongest and fast growing DeFi gambling community.</p>
-     </div>
-        <div id="buttons-row">
-            <button type="button" class="btn3">Tiwtter</button>
-            <button type="button" class="btn4">Discord</button>
-            <button type="button" class="btn5">OpenSea</button>
-            <button type="button" class="btn6">instagram</button>
-
+    <div class="footerr bubbleWrapper">
+      <div class="footer-backgrond">
+        <div class="footer-row">
+          <div>
+            <div>
+              <p class="Sold-p">Join the club</p>
+              <p class="Every-p">
+                Become a member of the strongest and fast growing DeFi gambling
+                community.
+              </p>
+            </div>
+            <div id="buttons-row">
+              <button type="button" class="btn3">Tiwtter</button>
+              <button type="button" class="btn4">Discord</button>
+              <button type="button" class="btn5">OpenSea</button>
+              <button type="button" class="btn6">instagram</button>
+            </div>
+          </div>
+          <div class="sec-row-div">
+            <button type="button" class="btn2">MINT YOUR TICKET</button>
+          </div>
         </div>
+      </div>
+
+      <br />
+      <div class="line3"></div>
+      <br />
+
+      <div class="waves">
+        <svg viewBox="0 0 120 28">
+          <defs>
+            <filter id="goo">
+              <feGaussianBlur
+                in="SourceGraphic"
+                stdDeviation="1"
+                result="blur"
+              />
+              <feColorMatrix
+                in="blur"
+                mode="matrix"
+                values="
+              1 0 0 0 0  
+              0 1 0 0 0  
+              0 0 1 0 0  
+              0 0 0 13 -9"
+                result="goo"
+              />
+              <xfeBlend in="SourceGraphic" in2="goo" />
+            </filter>
+            <path
+              id="wave"
+              d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z"
+            />
+          </defs>
+
+          <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2"></use>
+          <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
+
+          <g class="gooeff" filter="url(#goo)">
+            <circle class="drop drop1" cx="20" cy="2" r="8.8" />
+            <circle class="drop drop2" cx="25" cy="2.5" r="7.5" />
+            <circle class="drop drop3" cx="16" cy="2.8" r="9.2" />
+            <circle class="drop drop4" cx="18" cy="2" r="8.8" />
+            <circle class="drop drop5" cx="22" cy="2.5" r="7.5" />
+            <circle class="drop drop6" cx="26" cy="2.8" r="9.2" />
+            <circle class="drop drop1" cx="5" cy="4.4" r="8.8" />
+            <circle class="drop drop2" cx="5" cy="4.1" r="7.5" />
+            <circle class="drop drop3" cx="8" cy="3.8" r="9.2" />
+            <circle class="drop drop4" cx="3" cy="4.4" r="8.8" />
+            <circle class="drop drop5" cx="7" cy="4.1" r="7.5" />
+            <circle class="drop drop6" cx="10" cy="4.3" r="9.2" />
+
+            <circle class="drop drop1" cx="1.2" cy="5.4" r="8.8" />
+            <circle class="drop drop2" cx="5.2" cy="5.1" r="7.5" />
+            <circle class="drop drop3" cx="10.2" cy="5.3" r="9.2" />
+            <circle class="drop drop4" cx="3.2" cy="5.4" r="8.8" />
+            <circle class="drop drop5" cx="14.2" cy="5.1" r="7.5" />
+            <circle class="drop drop6" cx="17.2" cy="4.8" r="9.2" />
+            <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
+          </g>
+          <!-- g mask="url(#xxx)">
+       <path   id="wave1"  class="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+       </g>
+     </g -->
+        </svg>
+      </div>
     </div>
-    <div class="sec-row-div"><button type="button" class="btn2 ">MINT YOUR TICKET</button>
-    
-    </div>
-</div>
 
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
 
-</div><br><div class="line3"></div><br>
-</div>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js" integrity="sha512-4xtXZGcbxYKcswaOVR0Z1MVVpaqAs/bZ2qUCkbVpRmLnZqeLnoEP9J771P8KYJ5Ol8FNtj0qnQ/KhlQifrY7FA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"
+      integrity="sha512-4xtXZGcbxYKcswaOVR0Z1MVVpaqAs/bZ2qUCkbVpRmLnZqeLnoEP9J771P8KYJ5Ol8FNtj0qnQ/KhlQifrY7FA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="script.js"></script>
-
-</body>
-
+  </body>
 </html>
-
-
