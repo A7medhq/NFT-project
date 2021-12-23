@@ -192,7 +192,7 @@ nav {
   padding: 100px 10vh 0px 10vh;
 }
 .pra-main {
-  width: 500px;
+  width: 660px;
 }
 .main-img {
   width: 100%;
@@ -251,6 +251,7 @@ nav {
   width: 220px;
   height: 320px;
   object-fit: cover;
+  border-radius: 10px;
 }
 .cracter-size {
   display: flex;
@@ -258,8 +259,15 @@ nav {
   padding: 4vh;
   align-items: center;
   font-size: 1.5rem;
+  
 }
-
+.character-tag{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0px;
+  text-align: center;
+}
 .footerr {
   position: relative;
   bottom: 0;
@@ -282,7 +290,7 @@ nav {
   border-radius: 10px;
   font-family: Georgia;
   color: #000000;
-  font-size: 16px;
+  font-size: 24px;
   background: #fcfcfc;
   width: max-content;
   padding: 5px;
@@ -668,13 +676,13 @@ h6 {
 }
 
 p {
-  max-width: 75ch;
+  max-width: 43ch;
   margin-bottom: 1.5em;
 }
 
 .section {
   padding-top: 8em;
-  padding-bottom: 8em;
+  padding-bottom: 2em;
 }
 
 .grid {
@@ -823,7 +831,7 @@ p {
 
   .section {
     padding-top: 4em;
-    padding-bottom: 4em;
+    padding-bottom: .5em;
   }
 
   .container {
@@ -868,10 +876,25 @@ p {
   -ms-grid-column-align: center;
   justify-self: center;
 }
+.hr-img{
+  width: 120px;
+height: 2px;
+background-color: rgb(255, 255, 255);
+border-radius: 14px;
+}
+.team-p{
+  font-size: 55px;
+  color: rgb(255, 255, 255);
+  display: flex;
 
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30PX;
+
+}
 /* roadmap */
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   .footer-row {
     display: flex;
     flex-direction: column;
@@ -915,7 +938,7 @@ p {
   object-fit: contain;
 }
 .Slotie-p p {
-  font-size: 18px;
+  font-size: 24px;
   text-align: center;
 }
 
@@ -1054,13 +1077,23 @@ svg {
 }
 
 /* mobile */
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .pra-main {
     width: 100%;
   }
 
+
+.btn6,.btn3,.btn4,.btn5{
+  width:90%;
+}
+
+
+
+.btn6:hover,.btn3:hover,.btn4:hover,.btn5:hover{
+  width:90%;
+}
   .Sold-p {
-    font-size: 50px;
+    font-size: 35px;
   }
   .main-nft {
     padding: 100px 1vh 0px 1vh;
@@ -1068,7 +1101,9 @@ svg {
     flex-direction: column;
     height: auto;
   }
-
+.main-img{
+  margin-top: 20px;
+}
   .store-contenar {
     display: flex;
     flex-direction: column-reverse;
