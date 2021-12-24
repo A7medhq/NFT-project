@@ -26,10 +26,21 @@ var end = new Date('01/01/2022 10:1 AM');
         var minutes = Math.floor((distance % _hour) / _minute);
         var seconds = Math.floor((distance % _minute) / _second);
 
-        $days.text(' ' + days + ' ')
-        $hours.text(hours)
-        $mins.text(minutes)
-        $secs.text(seconds)
+
+
+
+      $("#timer").html("<div class='days'><div class='numbers day'>"+days+"</div>days</div>" + 
+      "<div class='hours'><div class='numbers hour'>"+hours+"</div>hours</div>" + 
+      "<div class='minutes'><div class='numbers min'>"+minutes+"</div>minutes</div>" + 
+      "<div class='seconds'><div class='numbers sec'>"+seconds+"</div>seconds</div>")
+
     }
 
     timer = setInterval(showRemaining, 1000);
+
+
+
+    
+
+
+
